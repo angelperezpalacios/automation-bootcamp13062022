@@ -14,20 +14,18 @@ jobs:
     executor: default
     steps:
       - checkout
-      - run: 
+      - run:
           name: Install Dependencies
-          command: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y apt-utils
-      - run: 
+          command: >
+            sudo apt-get update && sudo apt-get upgrade && sudo apt-get
+            install -y apt-utils
+      - run:
           name: Install Fortune
           command: sudo apt-get install -y fortune
-      - run: 
+      - run:
           name: Run Fortune
           command: /usr/games/fortune
 workflows:
   fun-workflow:
     jobs:
-<<<<<<< HEAD
       - fun
-=======
-      - fun
->>>>>>> ff2d84d333c625d6a86f02d6588bd3ce571d008f
