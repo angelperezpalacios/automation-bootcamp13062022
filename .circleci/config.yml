@@ -26,4 +26,8 @@ jobs:
 workflows:
   fun-workflow:
     jobs:
+<<<<<<< HEAD
       - fun
+=======
+      - fun
+>>>>>>> ff2d84d333c625d6a86f02d6588bd3ce571d008f
